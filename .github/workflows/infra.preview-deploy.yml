@@ -120,7 +120,7 @@ jobs:
           terraform init -no-color
       - name: Terraform apply
         run: |
-          terrafomrm apply \
+          terraform apply \
             -var 'project=${{ env.TF_PROJECT }}' \
             -var 'environment=${{ env.TF_ENVIRONMENT }}' \
             -var 'username=${{ secrets.MYSQL_USERNAME }}' \
